@@ -1,0 +1,307 @@
+body{
+        margin:0;
+        background-color:#f1f1f1;
+        font-family:'Roboto';
+        color: #31708f;
+    }
+
+/*----header-----------------------------------------------------------------------------------------------------------------------------------*/
+  
+
+.header{
+        margin:0;
+        background: linear-gradient(to right,#0d203c, #1e457e, #0d203c);
+        text-align: center;
+        box-shadow: 0px 5px 1px #2daedd;
+        width:100%;
+    }
+
+.header h1{
+        font-family:'Arial';
+        color:#2daedd;
+        text-shadow: 3px 3px 10px #000000;
+        margin :0;
+        font-size:24px;
+        padding-top : 20px;
+    }
+.header h2{
+        font-family:'Saira';
+        color: #ffffff;
+        font-size: 18px;
+        margin:0px; 
+        padding-bottom:10px;       
+    }
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*----admin login-------------------------------------------------------------------------------------------------------------------------------------*/
+.admin {
+      font-family:'Saira';
+      color:white;
+      cursor:pointer;
+      padding:0;
+      margin:0;
+
+    }
+.admin:hover{
+        color : #3daedd;
+    }
+.admin_content {
+
+        display: none;
+        position: absolute;    
+        right: 1%;
+        margin: 0;
+    }
+.show {
+        display: block;
+    }
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*---Admin------------------------------------------------------------------------------------------------------------------------------------------*/
+.admin_tab {
+    font-family:'Saira';
+    width:45%;
+}
+.tab_data td{
+    font-size:14px;
+}
+.admin_editors {
+    background-color:#e3f2fd;
+    padding:5px;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*---Footer------------------------------------------------------------------------------------------------------------------------------------------*/
+.footer {
+    background-color:#202020;
+    text-decoration: none;
+    padding:0px;
+}
+.footer img {
+    display:inline-block;
+    margin:0px;
+    padding:0px 30px 0px 30px;
+    vertical-align: middle;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----Navigation----------------------------------------------------------------------------------------------------------------------------------*/
+.nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0px 180px;
+    overflow: hidden;
+    background-color: #202020;
+    box-shadow: 0px 1px 3px #333;
+}
+
+.nav li {
+    float: left;
+}
+
+.nav li a {
+    display: inline-block;
+    color: white;
+    text-align: center;
+    padding: 5px 40px 5px 40px;
+    text-decoration: none;
+    border-bottom:3px solid #202020; 
+    transition: border-bottom .5s, color .5s;
+    font-family:'Saira';
+}
+
+.nav li a:hover {
+    border-bottom:3px solid #2daedd; 
+    color: #2daedd;
+}
+/*------------------------------------------------------------------------------------------------------------------------------------------------*/
+.box{
+    background-color: rgba(255,255,255, 1.0);
+    margin:0px;
+    padding:15px;
+    box-shadow: 0px 0px 20px 0px #888;
+    overflow:hidden;
+    }
+
+.btn {
+    background-color: #2daedd;
+    color : white;
+    text-decoration : none;
+    text-align:center;
+    padding:5px;
+    border: 1px solid #2daedd;
+    box-shadow: 0px 0px 2px 0px #333;
+    cursor : pointer;
+    font-family:'Saira';
+}
+.btn:hover {
+    color : #0d203c;
+    opacity: 0.8;
+}
+
+.status {
+    color:#990000; 
+    background-color:#f7dada;
+    margin:20px 20px 0px 20px;
+    padding:15px 15px 15px 20px;
+    box-shadow: 0px 0px 20px 0px #888;
+}
+
+.inp {
+    font-family:'Roboto';
+    font-size:16px;
+    padding:10px;
+}
+
+/*-------registration form-----------------------------------------------------------------------------------------------------------------------*/
+
+.registration {
+    width:315px;
+    padding:5px;
+    border: 1px solid #31708f;  
+    box-shadow: 0px 0px 5px 0px #888;
+        
+}
+
+.registration_select {
+    padding:5px 10px 5px 10px;
+    border: 1px solid #31708f;  
+    box-shadow: 0px 0px 5px 0px #bbb;
+    background-color:#fdfdfd;
+    color:#31708f;
+    font-family:'Saira';
+    font-size:16px;
+    width:82%;
+    cursor:pointer;
+}
+
+.registration:valid {
+    color: #4caf50;
+}
+
+.registration:valid + .icon-validation::after {
+    content: attr(data-icon);
+    font-size:20px;
+    color: #4caf50;
+    }
+
+#pass_status{
+    color:#e3f2fd;
+    }
+    
+#rechk_pass:valid ~ #pass_status {
+    color: #4caf50;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/* links or forgot password ------------------------------------------------------------------------------------------------------------------------------*/
+.link {
+    color:#888; 
+    font-size:16px; 
+    text-decoration:none;
+}
+
+.link:hover {
+    color:#2daedd;
+    cursor:pointer;
+}
+.sidelink {
+     color:#ffffff;
+     transition: color .5s;
+     cursor:pointer;
+     font-size:12px;
+}
+
+.sidelink:hover {
+    color: #2daedd;
+
+}
+
+.sidelinkin {
+     color:#00ff00;
+     transition: color .5s;
+     cursor:pointer;
+     font-size:12px;
+}
+
+.sidelinkin:hover {
+    color: #2daedd;
+
+}
+
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+
+/*-------Student details form-------------------------------------------------------------------------------------------------------------------*/
+#student_details label {
+    margin-bottom:-5px;
+}
+
+#student_details input[type="text"], #student_details input[type="date"],  #student_details input[type="file"], 
+#student_details select, #student_details textarea  {
+    padding:5px 10px 5px 10px;
+    border: 1px solid #31708f;  
+    box-shadow: 0px 0px 5px 0px #bbb;
+    background-color:#fdfdfd;
+    color:#31708f;
+    font-family:'Saira';
+    font-size:16px;
+    width:82%;
+}
+
+.student_form:valid + .icon-validation::after {
+    content: attr(data-icon);
+    font-size:20px;
+    color: #4caf50;
+    }
+    
+/*----------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------Steps-------------------------------------------------------------------------------------------------------------------------*/
+.steps .data {
+    display:inline-block;
+    padding:5px;
+    border: 1px solid #202020;  
+    box-shadow: 0px 0px 8px 0px #888;
+    width:15%;
+    text-align:center;
+    font-family:'Saira'; 
+    font-weight:bold;
+    font-size:100%;
+    
+}
+.steps .line {
+    margin-left:0px;
+    margin-right:0px;
+    display:inline-block;
+    background-color:#202020;
+    padding:0px;
+    width:5%;
+    text-align:center;
+    height:2px;
+    vertical-align:middle;
+    text-align: center;
+
+}
+
+/*----Admin Hostel Form -----------------------------------------------------------------------------------------------------------------------*/
+
+#admin_hostel input[type="text"], #admin_hostel select{
+    padding:5px 10px 5px 10px;
+    border: 1px solid #31708f;  
+    box-shadow: 0px 0px 5px 0px #bbb;
+    background-color:#fdfdfd;
+    color:#31708f;
+    font-family:'Saira';
+    font-size:16px;
+    width:82%;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
+/*----Filled Form -----------------------------------------------------------------------------------------------------------------------------*/
+
+.filled_form label {
+    display:inline-block;
+    font-weight:bold;
+    width:40%;
+}
+/*---------------------------------------------------------------------------------------------------------------------------------------------*/
